@@ -5,7 +5,7 @@ import PatientCard from "../patient-card/patient-card";
 const Patients = () => {
     const patients = patientsData;
     return (
-        <div className="bg-customWhite rounded-lg py-4 flex flex-col gap-8 shadow-md overflow-y-scroll">
+        <div className="bg-customWhite rounded-lg py-4 flex flex-col gap-8 shadow-md overflow-y-auto">
             <div className="flex flex-row justify-between items-center px-3">
                 <h1 className="font-bold text-left text-2xl drop-shadow-sm">Patients</h1>
                 <div className="hover:cursor-pointer">
@@ -19,12 +19,11 @@ const Patients = () => {
                     />
                 </div>
             </div>
-            {patients.map((patient) => <PatientCard key={patient.id} patients={patient}/>)}
+            <div className="flex flex-col gap-8 overflow-y-auto">
+                {patients.map((patient) => <PatientCard key={patient.id} patients={patient}/>)}
+            </div>
         </div>
     );
 };
-
-
-
 
 export default Patients;

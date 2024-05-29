@@ -29,3 +29,13 @@ export interface Patient {
 export interface PatientCardProps {
     patients: Patient;
 }
+
+export interface Result {
+    testName: string,
+    fileUrl: string,
+    id: number
+}
+
+export interface ResultCardProps {
+    result: Result;
+}

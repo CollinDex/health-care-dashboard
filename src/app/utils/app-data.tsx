@@ -91,3 +91,41 @@ export const patientsData = [
         age: 5
     }
 ];
+
+export const labResults = [
+    {
+        testName: 'LiverFunctionTest',
+        fileUrl: 'www.test.imge',
+        id: 1
+    },
+    {
+        testName: 'Kidney Test',
+        fileUrl: 'www.test.imge',
+        id: 2
+    },
+    {
+        testName: 'Serum UCR',
+        fileUrl: 'www.test.imge',
+        id: 3
+    },
+    {
+        testName: 'ECG',
+        fileUrl: 'www.test.imge',
+        id: 4
+    },
+    {
+        testName: 'X-Ray',
+        fileUrl: 'www.test.imge',
+        id: 5
+    },
+    {
+        testName: 'MRI',
+        fileUrl: 'www.test.imge',
+        id: 6
+    },
+    {
+        testName: 'CTX',
+        fileUrl: 'www.test.imge',
+        id: 7
+    }
+];
