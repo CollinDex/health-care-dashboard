@@ -31,4 +31,63 @@ export const defaultProfile = {
     name: 'Dr. Jose Simmons',
     profilePhoto: '/ProfileImage.png',
     title: 'General Practitioner'
-}
+};
+
+export const patientsData = [
+    {
+        name: 'Obetta Chibuikem',
+        id: 1,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 2,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 3,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 4,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 5,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 6,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 7,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 8,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    }
+];

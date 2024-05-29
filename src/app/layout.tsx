@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Manrope } from 'next/font/google';
 import "./globals.css";
-import NavBar from "./components/navbar";
+import NavBar from "./components/navbar/navbar";
 
 const manrope = Manrope({
   subsets: ['latin'],

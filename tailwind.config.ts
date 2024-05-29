@@ -16,7 +16,8 @@ const config: Config = {
       colors: {
         'customAsh': '#F6F7F8',
         'customWhite': '#FFFFFF',
-        'activeState': '#01F0D0'
+        'activeState': '#01F0D0',
+        'activeState2': '#D8FCF7'
       }
     }
   },

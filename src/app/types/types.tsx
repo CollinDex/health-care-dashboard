@@ -17,3 +17,15 @@ export interface Profile {
 export interface ProfileProps {
     profile: Profile
 };
+
+export interface Patient {
+    id: number,
+    name: string,
+    sex: string,
+    profilePicture: string,
+    age: number
+}
+
+export interface PatientCardProps {
+    patients: Patient;
+}
