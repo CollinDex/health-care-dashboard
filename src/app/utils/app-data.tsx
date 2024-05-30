@@ -196,3 +196,56 @@ export const patientDetails = {
     emergencyContact: '0803458284',
     insuranceProvider: 'Wella Health'
 };
+
+export const diagnosticList = [
+    {
+      problem: 'Hypertension',
+      description: 'High blood pressure',
+      status: 'Under Control'
+    },
+    {
+      problem: 'Diabetes',
+      description: 'High blood sugar levels',
+      status: 'Critical'
+    },
+    {
+      problem: 'Asthma',
+      description: 'Chronic respiratory condition',
+      status: 'Stable'
+    },
+    {
+      problem: 'Asthma',
+      description: 'Chronic respiratory condition',
+      status: 'Stable'
+    },
+    {
+      problem: 'Asthma',
+      description: 'Chronic respiratory condition',
+      status: 'Stable'
+    },
+    {
+      problem: 'Asthma',
+      description: 'Chronic respiratory condition',
+      status: 'Stable'
+    },
+    {
+      problem: 'Asthma',
+      description: 'Chronic respiratory condition',
+      status: 'Stable'
+    },
+    {
+      problem: 'Asthma',
+      description: 'Chronic respiratory condition',
+      status: 'Stable'
+    },
+    {
+      problem: 'Asthma',
+      description: 'Chronic respiratory condition',
+      status: 'Stable'
+    },
+    {
+      problem: 'Asthma',
+      description: 'Chronic respiratory condition',
+      status: 'Stable'
+    }
+];

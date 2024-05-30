@@ -13,7 +13,7 @@ const DetailsPanel = () => {
                     height={200}
                     alt="Profile Photo"
                     priority= {true}
-                    className="rounded-full bg-green-200"
+                    className="rounded-full"
                 />
                 <h1 className="font-bold text-2xl text-center drop-shadow-sm">{data.name}</h1>
             </div>
@@ -91,7 +91,7 @@ const DetailsPanel = () => {
                 <div className="flex flex-row gap-2 items-center justify-start">
                     <div className="hover:cursor-pointer">
                         <Image
-                            src= '/PhoneIcon.svg'
+                            src= '/InsuranceIcon.svg'
                             width={18}
                             height={18}
                             alt="Profile Photo"

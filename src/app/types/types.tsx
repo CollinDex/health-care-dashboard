@@ -50,3 +50,9 @@ export interface PatientDetails {
     emergencyContact: string,
     insuranceProvider: string
 };
+
+export interface Diagnosis {
+    problem: string,
+    description: string,
+    status: string
+} 
