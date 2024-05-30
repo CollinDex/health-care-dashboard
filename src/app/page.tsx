@@ -8,16 +8,16 @@ export default function Home() {
   return (
     <main className="w-full h-full bg-customAsh grid grid-cols-[1fr_2fr_1fr] gap-8 mt-8">
 
-      <div className="grid grid-rows-[1fr] h-screen pb-4">
+      <div className="grid grid-rows-[1fr] h-screen -mt-5 pb-4">
         <Patients/>
       </div>
 
-      <div className="grid grid-rows-[2fr_1fr] h-screen gap-4 pb-4">
+      <div className="grid grid-rows-[2fr_1fr] h-screen gap-4 -mt-5 pb-4">
           <DiagnosticHistory/>
           <DiagnosticList/>
       </div>
 
-      <div className="grid grid-rows-[2fr_1fr] h-screen gap-4 -mt-4 pb-4">
+      <div className="grid grid-rows-[2fr_1fr] h-screen gap-4 -mt-4 pb-8">
         <DetailsPanel/>
         <LabResults/>
       </div>
