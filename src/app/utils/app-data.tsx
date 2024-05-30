@@ -89,6 +89,62 @@ export const patientsData = [
         sex: 'male',
         profilePicture: '/ProfileImage.png',
         age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 9,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 10,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 11,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 12,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 13,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 14,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 15,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
+    },
+    {
+        name: 'Obetta Chibuikem',
+        id: 16,
+        sex: 'male',
+        profilePicture: '/ProfileImage.png',
+        age: 5
     }
 ];
 
@@ -129,3 +185,14 @@ export const labResults = [
         id: 7
     }
 ];
+
+export const patientDetails = {
+    id: 1,
+    name: 'Jessica Taylor',
+    dateOfBirth: '20/05/24',
+    gender: 'female',
+    profilePhoto: '/DefaultDetailsPicture.png',
+    contactInfo: '08034582884',
+    emergencyContact: '0803458284',
+    insuranceProvider: 'Wella Health'
+};

@@ -5,7 +5,7 @@ export interface NavLink {
 };
 
 export interface NavLinksProps {
-    navLinks: NavLink[];
+    navLinks: NavLink[]
 };
 
 export interface Profile {
@@ -24,18 +24,29 @@ export interface Patient {
     sex: string,
     profilePicture: string,
     age: number
-}
+};
 
 export interface PatientCardProps {
-    patients: Patient;
-}
+    patient: Patient
+};
 
 export interface Result {
     testName: string,
     fileUrl: string,
     id: number
-}
+};
 
 export interface ResultCardProps {
-    result: Result;
-}
+    result: Result
+};
+
+export interface PatientDetails {
+    id: number,
+    name: string,
+    profilePhoto: string,
+    dateOfBirth: string,
+    gender: string,
+    contactInfo: string,
+    emergencyContact: string,
+    insuranceProvider: string
+};
