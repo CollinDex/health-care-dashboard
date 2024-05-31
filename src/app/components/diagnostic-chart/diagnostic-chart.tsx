@@ -23,13 +23,13 @@ ChartJS.register(
 
 const DiagnosticChart: React.FC<DiagnosisHistory> = ({data}) => {
 
-    const daysAndMonth = data.map((entry)=> `${entry.month.slice(0,3)},${entry.year}`).slice(0,6);
+    const daysAndMonth = data.map((entry)=> `${entry.month.slice(0,3)},${entry.year}`).slice(0,6).reverse();
     console.log('Labels',daysAndMonth);
 
-    const systoleData = data.map((entry)=> entry.blood_pressure.systolic.value).slice(0,6);
+    const systoleData = data.map((entry)=> entry.blood_pressure.systolic.value).slice(0,6).reverse();
     console.log('Sys',systoleData);
 
-    const diastoleData = data.map((entry)=> entry.blood_pressure.diastolic.value).slice(0,6);
+    const diastoleData = data.map((entry)=> entry.blood_pressure.diastolic.value).slice(0,6).reverse();
     console.log('Dys',diastoleData);
 
     const chartData = {
