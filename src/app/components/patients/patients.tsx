@@ -1,10 +1,8 @@
 import Image from "next/image";
-import { patientsData } from "@/app/utils/app-data";
 import PatientCard from "../patient-card/patient-card";
-import { Patient } from "@/app/types/types";
+import { PatientsData} from "@/app/types/types";
 
-const Patients = () => {
-    const patients:Patient[] = patientsData;
+const Patients: React.FC<PatientsData> = ({patients}) => {
     return (
         <div className="bg-customWhite rounded-lg py-4 flex flex-col gap-8 shadow-md overflow-y-auto">
             <div className="flex flex-row justify-between items-center px-3">
@@ -21,7 +19,7 @@ const Patients = () => {
                 </div>
             </div>
             <div className="flex flex-col gap-8 overflow-y-auto">
-                {patients.map((patient) => <PatientCard key={patient.id} patient={patient}/>)}
+                {patients.map((patient, index ) => <PatientCard key={index} patient={patient}/>)}
             </div>
         </div>
     );
