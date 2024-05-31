@@ -1,5 +1,14 @@
 import Image from "next/image";
-import { ProfileProps } from "../../types/types";
+
+interface Profile {
+    name: string,
+    profilePhoto: string,
+    title: string
+};
+
+interface ProfileProps {
+    profile: Profile
+};
 
 const Profile: React.FC<ProfileProps> = ({profile}) => {
     return (

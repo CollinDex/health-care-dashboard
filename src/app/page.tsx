@@ -45,13 +45,13 @@ export default function Home() {
       </div>
 
       <div className="grid grid-rows-[2fr_1fr] h-screen gap-4 -mt-5 pb-4">
-          <DiagnosticHistory/>
+          <DiagnosticHistory data={patients[3].diagnosis_history}/>
           <DiagnosticList diagnosis={patients[3].diagnostic_list}/>
       </div>
 
       <div className="grid grid-rows-[2fr_1fr] h-screen gap-4 -mt-4 pb-8">
-        <DetailsPanel/>
-        <LabResults/>
+        <DetailsPanel details={patients[3]}/>
+        <LabResults labResults={patients[3].lab_results}/>
       </div>
     </main>
     );

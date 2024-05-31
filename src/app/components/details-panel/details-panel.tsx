@@ -1,21 +1,29 @@
 import Image from "next/image";
 import { PatientDetails} from "@/app/types/types";
-import { patientDetails } from "@/app/utils/app-data";
 
-const DetailsPanel = () => {
-    const data:PatientDetails = patientDetails;
+const DetailsPanel: React.FC<PatientDetails> = ({details}) => {
+
+    function convertDate(inputDate:string) {
+        const [month, day, year] = inputDate.split('/');
+        const date = new Date(parseInt(year), parseInt(month) - 1, parseInt(day)); // JavaScript months are 0-based
+        const options:Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+        return date.toLocaleDateString('en-US', options);
+    };
+      
+    const formattedDate = convertDate(details.date_of_birth);
+      
     return (
         <div className="bg-customWhite rounded-lg px-3 py-4 flex flex-col justify-between gap-4 shadow-md -mt-6">
             <div className="flexself-center flex flex-col items-center gap-2">
                 <Image
-                    src= {data.profilePhoto}
+                    src= {details.profile_picture}
                     width={200}
                     height={200}
                     alt="Profile Photo"
                     priority= {true}
                     className="rounded-full"
                 />
-                <h1 className="font-bold text-2xl text-center drop-shadow-sm">{data.name}</h1>
+                <h1 className="font-bold text-2xl text-center drop-shadow-sm">{details.name}</h1>
             </div>
 
             <div className="flex flex-col gap-2">
@@ -33,7 +41,7 @@ const DetailsPanel = () => {
                     </div>
                     <div className="flex flex-col justify-between py-2 pr-2 h-full">
                         <h1 className="text-sm text-left">Date Of Birth</h1>
-                        <h1 className="text-sm text-left font-bold">{data.dateOfBirth}</h1>
+                        <h1 className="text-sm text-left font-bold">{formattedDate}</h1>
                     </div>
                 </div>
 
@@ -50,7 +58,7 @@ const DetailsPanel = () => {
                     </div>
                     <div className="flex flex-col justify-between py-2 pr-2 h-full">
                         <h1 className="text-sm text-left">Gender</h1>
-                        <h1 className="text-sm text-left font-bold">{data.gender}</h1>
+                        <h1 className="text-sm text-left font-bold">{details.gender}</h1>
                     </div>
                 </div>
                 
@@ -67,7 +75,7 @@ const DetailsPanel = () => {
                     </div>
                     <div className="flex flex-col justify-between py-2 pr-2 h-full">
                         <h1 className="text-sm text-left">Contact Info</h1>
-                        <h1 className="text-sm text-left font-bold">{data.contactInfo}</h1>
+                        <h1 className="text-sm text-left font-bold">{details.phone_number}</h1>
                     </div>
                 </div>
 
@@ -84,7 +92,7 @@ const DetailsPanel = () => {
                     </div>
                     <div className="flex flex-col justify-between py-2 pr-2 h-full">
                         <h1 className="text-sm text-left">Emergency Contacts</h1>
-                        <h1 className="text-sm text-left font-bold">{data.emergencyContact}</h1>
+                        <h1 className="text-sm text-left font-bold">{details.emergency_contact}</h1>
                     </div>
                 </div>
 
@@ -101,7 +109,7 @@ const DetailsPanel = () => {
                     </div>
                     <div className="flex flex-col justify-between py-2 pr-2 h-full">
                         <h1 className="text-sm text-left">Insurance Provider</h1>
-                        <h1 className="text-sm text-left font-bold">{data.insuranceProvider}</h1>
+                        <h1 className="text-sm text-left font-bold">{details.insurance_type}</h1>
                     </div>
                 </div>
             </div>

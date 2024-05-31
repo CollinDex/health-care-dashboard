@@ -22,6 +22,9 @@ const config: Config = {
         'respRateBg': '#E0F3FA',
         'tempBg': '#FFE6E9',
         'heartRateBg': '#FFE6F1',
+        'chartBg': '#F4F0FE',
+        'systolicBg': '#E66FD2',
+        'diastolicBg': '#8C6FE6'
       }
     }
   },

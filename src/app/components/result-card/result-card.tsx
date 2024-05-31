@@ -6,7 +6,7 @@ const ResultCard: React.FC<ResultCardProps> = ({result}) => {
         <div className="flex flex-row gap-2 items-center justify-between px-3 py-3 hover:bg-activeState3 hover:cursor-pointer">
             <div className="flex flex-row gap-2 items-center">
                 <div className="flex flex-col pr-2">
-                    <h1 className="text-sm text-left">{result.testName}</h1>
+                    <h1 className="text-sm text-left">{result}</h1>
                 </div>
             </div>
             <div className="flex items-center justify-center">

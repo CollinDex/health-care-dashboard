@@ -1,5 +1,14 @@
 import Image from "next/image";
-import { NavLinksProps } from "../../types/types";
+
+interface NavLink {
+    name: string;
+    src: string;
+    label: string;
+};
+
+interface NavLinksProps {
+    navLinks: NavLink[]
+};
 
 const NavLinks: React.FC<NavLinksProps> = ({navLinks}) => {
     return (
