@@ -13,12 +13,12 @@ const DiagnosticHistory: React.FC<DiagnosisHistory> = ({data}) => {
                     <div className="flex flex-row items-center gap-4">
                             <h1 className="text-sm text-left drop-shadow-sm">Last 6 months</h1>
                             <Image
-                                src= '/ArrowDownIcon.svg'
+                                src= '/ExpandMoreIcon.svg'
                                 width={10}
-                                height={5}
+                                height={10}
                                 alt="Down Arrow"
                                 priority= {true}
-                                className="rounded-full pr-1"
+                                className="rounded-full"
                             />
                     </div>
                 </div>
