@@ -65,6 +65,9 @@ const DiagnosticChart: React.FC<DiagnosisHistory> = ({data}) => {
             tooltip: {
                 enabled: true, 
                 intersect: false
+            },
+            legend: {
+                display: false // Disable the legend
             }
         }
     };
